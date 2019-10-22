@@ -26,8 +26,8 @@ export type RadioGroupOverridesT = {
 };
 
 export type OverridesT = {
-  ...RadioOverridesT,
-  ...RadioGroupOverridesT,
+  ...$Exact<RadioOverridesT>,
+  ...$Exact<RadioGroupOverridesT>,
 };
 
 export type DefaultPropsT = {
